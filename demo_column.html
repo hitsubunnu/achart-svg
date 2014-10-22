@@ -1,0 +1,37 @@
+<html lang="ja">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Demo</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css">
+    <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sc.column.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function () {
+			new ChartColumn({
+				id:'show_demo',
+				width:'980',
+				height:'400',
+
+				title:{string: 'JPYEUR　2012-03-09　～　2012-03-12　4日比較',option: {fill: 'brown','font-size': 18} },
+				label_left_min:0.009165,
+				label_left_max:0.00937584,
+				label_bottom:["2012-03-09","2012-03-10","2012-03-11","2012-03-12"],
+				data:[
+					{string:"現在値",color:"#3166cc",values:[0.009252,0.009246,0.009246,0.009246]},
+					{string:"5日平均",color:"#dc3812",values:[0.009315,0.0093076,0.0092706,0.0092706]},
+					{string:"25日平均",color:"#ff9900",values:[0.00937584,0.00935696,0.00933616,0.00933616]}
+				]
+			}).draw();
+
+		};
+
+	</script>
+</head>
+    <body>
+		<p>ChartColumn (Animate)</p>
+		<div id="show_demo"></div>
+        <div id="debug"></div>
+    </body>
+</html>
+

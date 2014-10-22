@@ -1,1 +1,117 @@
-hello world
+<html lang="ja">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>SVG/VML Demo一覧</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="hitsubunnu">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+		body {
+			font-family: 'MS Gothic','sans-serif';
+			padding-top: 60px;
+        	padding-bottom: 40px;
+		}
+		.add {
+			padding-top: 60px;
+			text-align: right;
+			float: right;
+		}
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+						<ul class="nav">
+							<li>
+								<div class="btn-group">
+									<button class="btn btn-primary">SVG/VML</button>
+									<a href="/chart/canvas/index.html" class="btn">Canvas(スマホ版)</a>
+								</div>	
+							</li>
+							<li><a href="#demo_column" > Column </a></li> 
+							<li><a href="#demo_line"> Line </a></li>
+							<li><a href="#demo_line_all"> Line(all) </a></li>
+							<li><a href="#demo_pie"> Pie(Animate)</a></li>
+							<li><a href="#demo_radar"> Radar </a></li>
+							<li><a href="#demo_bubble"> Bubble </a></li>
+							<li><a href="#demo_candlestick"> Candlestick</a></li> 
+							<li><a href="#demo_candlestick_analysis"> Candlestick+Analysis </a></li> 
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+		
+			<div class="hero-unit">
+        		<h4>SVG/VML対応ブラウザ：</h4>
+        		<p>Internet Explorer 6.0+ , Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ , iphone(ios 3.0+), ipad(ios 3.0+) , android(3.0+ 及び 2.3+opera , 2.3+Firefox)</p>
+        		<h4>API使い方:</h4>
+				<pre>
+		window.onload = function () {
+			new ChartColumn({
+				id:'show_demo',
+				width:'980',
+				height:'400',
+				data:  ... 
+			}).draw();
+		};
+</pre>
+      		</div>
+			
+				
+			<div id="demo_column">
+				<h3 class="add"><a href="demo_column.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_column.html" width="1050" height="550"></iframe>
+			</div>
+			<br >	
+			<div id="demo_line">
+				<h3 class="add"><a href="demo_line.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_line.html" width="1050" height="550"></iframe>
+			</div>
+			<br >	
+			<div id="demo_line_all">
+				<h3 class="add"><a href="demo_line_all.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_line_all.html" width="1050" height="550"></iframe>
+			</div>
+			<br >	
+			<div id="demo_pie">
+				<h3 class="add"><a href="demo_pie.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_pie.html" width="1050" height="550"></iframe>   	
+			</div>
+			<br >	
+			<div id="demo_radar">
+				<h3 class="add"><a href="demo_radar.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_radar.html" width="1050" height="550"></iframe>   	
+			</div>
+			<br >	
+			<div id="demo_bubble">
+				<h3 class="add"><a href="demo_bubble.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_bubble.html" width="1050" height="550"></iframe>   	
+			</div>
+			<br >	
+			<div id="demo_candlestick">
+				<h3 class="add"><a href="demo_candlestick.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_candlestick.html" width="1050" height="580"></iframe>   	
+			</div>
+			<br >	
+			<div id="demo_candlestick_analysis">
+				<h3 class="add"><a href="demo_candlestick_analysis.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_candlestick_analysis.html" width="1050" height="720"></iframe>   	
+			</div>
+			<br >	
+
+		</div>
+	</body>
+</html>
+

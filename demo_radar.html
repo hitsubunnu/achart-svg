@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ChartRadar</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css">
+    <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sc.radar.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function () {
+			new ChartRadar({
+				id:'show_demo',
+				width:'400',
+				height:'400',
+
+				title:{string: 'radar chart: ニュース評価',option: {fill: '#3266CC','font-size': 18} },
+				value_max: 10,
+				data:[
+					{string: "考えさせられる", value:9},
+					{string: "役に立つ", value:6},
+					{string: "興味深い", value:7},
+					{string: "誰かに教えたい", value:3},
+					{string: "びっくりした", value:8}
+				]
+			}).draw();
+
+		};
+
+	</script>
+</head>
+    <body>
+		<p>ChartRadar</p>
+		<div id="show_demo" style="width:400"></div>
+    </body>
+</html>
+

@@ -1,0 +1,37 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ChartBubble</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css">
+    <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sc.bubble.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function () {
+			new ChartBubble({
+				id:'show_demo',
+				width:'980',
+				height:'400',
+
+				title:{string: 'ChartBubble',option: {fill: '#3266CC','font-size': 18} },
+				radius: 0.5,
+				label_bottom:{max: 10,min: -15,cali: 5},
+				label_left:{max: 15,min: -5,cali: 5},
+				data:[
+					{x: -15, y: -5, string: "半導体", value: 13},
+					{x: 0, y: 0, string: "石炭", value: 20},
+					{x: 5, y: 15, string: "鉱業", value: 50}
+				]
+			}).draw();
+
+		};
+
+	</script>
+</head>
+    <body>
+		<p>ChartBubble</p>
+		<div id="show_demo"></div>
+        <div id="debug"></div>
+    </body>
+</html>
+

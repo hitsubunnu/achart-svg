@@ -1,0 +1,36 @@
+<html lang="ja">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>ChartLine</title>
+	<link rel="stylesheet" href="css/demo.css" type="text/css">
+    <script src="js/raphael-min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/sc.pie.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		window.onload = function () {
+			new ChartPie({
+				id:'show_demo',
+				width:'400',
+				height:'400',
+
+				title:{string: 'PIEチャート',option: {fill: 'brown','font-size': 18} },
+				data:[
+					// value is percent
+					{string:"111",color:"red",value:0.1},
+					{string:"2222",color:"green",value:0.6},
+					{string:"33333",color:"blue",value:0.3}
+
+				]
+			}).draw();
+
+		};
+
+	</script>
+</head>
+    <body>
+		<p>PieChart(Animate)</p>
+		<div id="show_demo" style="width:400"></div>
+        <div id="debug"></div>
+    </body>
+</html>
+
